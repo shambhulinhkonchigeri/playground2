@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Login Page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../css/login-error.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+
+  <div class="first">
+
+
+
+    <div class="container">
+      <div style="min-height: 20vh"></div>
+      <div class="login-area">
+
+        <div class="login-text">
+          <span>login</span>
+        </div>
+
+
+        <div class="email-password">
+          <div id="email-password-text">
+            <p><b>Email or Username</b></p>
+            <input type="text" name="uname" required><br>
+          </div>
+          <div class="err">
+
+            <img src="../images/warning.png" width="15" height="15">
+            <span >this field is required</span>
+          </div>
+
+
+
+          <div id="email-password-text">
+            <p><b>Password</b></p>
+            <input type="password" placeholder="* * * * * * * *" name="psw" required>
+          </div>
+          <div class="err">
+
+            <img src="../images/warning.png" width="15" height="15">
+            <span >this field is required</span>
+          </div>
+        </div>
+
+
+        <div class="rem-me">
+          <div id="checkbox-text">
+            <input type="checkbox" name="remember">
+            <span style="font-size:12px;">Remember me</span>
+          </div>
+          <div id="forgot">
+            <span class=" psw" style=font-size:12px;><a href="#">Forgot password</a></span>
+          </div>
+
+          <div style="clear: both"></div>
+
+        </div>
+
+
+        <button type="submit" onclick="next()">Login</button>
+        <script>
+          function next() {
+            document.location = "../../../my-request/my-request1/html/myrequest1.html";
+          }
+        </script>
+
+      </div>
+      <div style="min-height: 20vh"> </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
